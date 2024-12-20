@@ -1,0 +1,17 @@
+# This GitHub Action and GH Extension is used to set up repositories with the following:
+
+- Milestones
+- Version Tagging
+- Multi Architecture Container Images
+- Pushing to Container Registries
+
+```plaintext
+{REPO}/.
+ │
+└── .github/workflows/
+    ├── milestones.yml              # Only run on specific conditions
+    ├── tagging.yml                 # Only tag if version changes
+    ├── docker-ghcr-push.yml        # Pushes Docker images on tags
+    ├── multi-arch-build.yml        # Builds multi-arch images on tags or releases
+└── GitVersion.yml              # GitVersion versioning rules
+```
